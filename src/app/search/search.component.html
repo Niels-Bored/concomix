@@ -1,0 +1,6 @@
+<div class="acomodo" *ngIf="indice==-1">
+    <h1>No existen resultados de "<span class="resaltado">{{nombreh}}</span>"</h1>
+    <img src="../../assets/pictures/not_found.png">
+</div>
+
+<app-unheroe *ngIf="indice!=-1" [heroe]='miheroe'></app-unheroe>

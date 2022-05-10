@@ -1,0 +1,19 @@
+<h1>Suscriptores</h1>
+<div >
+    <table class="table table-sm table-danger">
+        <tr class="table-dark">
+            <th>ID</th>
+            <th>Nombre de Usuario</th>
+            <th>Correo</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Sexo</th>
+        </tr>
+        <tr *ngFor="let item of usuario;let i = index">
+            <td>{{i}}</td>
+            <td>{{item.nombre}}</td>
+            <td>{{item.correo}}</td>
+            <td>{{item.fecha}}</td>
+            <td>{{item.sexo}}</td>
+        </tr>
+    </table>
+</div>

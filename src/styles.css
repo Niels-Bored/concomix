@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import './BootstrapLocal/bootstrap.min.css';
+body{
+    background-color:deepskyblue ;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}

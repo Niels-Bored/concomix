@@ -1,0 +1,62 @@
+<div class="jumbotron">
+    <div class="colores">
+      <h1 class="display-4">Bienvenido a ConComix</h1>
+      <p class="lead">¿Buscas un lugar para encontrar material relacionado al mundo de los cómics? Estás en el sitio indicado.</p>
+      <hr class="my-4">
+      <p>Registrate para mantenerte al tanto de las últimas curiosidades, datos y demás del mundo del cómic ¡Es gratis!</p>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+      Registrarse
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registra tus datos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form #myForm="ngForm" (submit)="registrar(myForm.value)">
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label>Nombre</label>
+                  <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label>Correo</label>
+                  <input type="email" class="form-control" id="correo" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label>Fecha de nacimiento</label>
+                  <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label>Sexo</label>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" value="Femenino" ngModel>
+                    <label class="form-check-label" for="Femenino">Femenino</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" value="Masculino" ngModel>
+                    <label class="form-check-label" for="Masculino">Masculino</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
