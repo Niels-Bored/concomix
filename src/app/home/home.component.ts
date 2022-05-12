@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
     (<HTMLInputElement>document.getElementById("nombre")).value="";
     (<HTMLInputElement>document.getElementById("correo")).value="";
     (<HTMLInputElement>document.getElementById("fecha")).value="";
-    // alert mamalón de que se registró
+    
     Swal.fire({
       position: 'top-end',
       icon: 'success',

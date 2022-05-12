@@ -2,6 +2,13 @@ import { Heroe } from "./heroe"
 
 export const HEROES:Heroe[]=[
     {
+      nombre: "Wonder Woman",
+      bio: "Katheryn Elizabeth Hudson (Santa Bárbara, California, 25 de octubre de 1984), más conocida por su nombre artístico Katy Perry, es una cantante, compositora, actriz, empresaria y modelo estadounidense, que saltó a la fama en 2008 con «I Kissed a Girl» y «Hot N Cold» de su álbum debut One of the Boys. Entre 2010 y 2011, cosechó todavía mayor éxito con su segundo álbum,Teenage Dream, que para su promoción lanzó seis sencillos de los cuales cinco —«California Gurls», «Teenage Dream», «Firework», «E.T» y «Last Friday Night (T.G.I.F.)»— se ubicaron en el puesto número 1 del Billboard Hot 100, lo que la convirtió en la primera artista femenina en lograr dicha hazaña y la segunda en general después de Michael Jackson con su álbum Bad (1987).",
+      img: "assets/pictures/wonder_katy.png",
+      aparicion: "25/10/1984",
+      casa: "DC"
+    },
+    {
         nombre: "Aquaman",
         bio: "El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.",
         img: "assets/pictures/aquaman.png",
